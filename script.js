@@ -1,0 +1,62 @@
+//array's with numbers, letters, and symbols
+var lowercase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var uppercase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+var symbols = ['!','@','#','$','%','&','-','?'];
+var generateBtn = document.querySelector('#generate');
+var results = []
+var userConditions = []
+
+//Math functions to find random characters
+var randomLowercase = lowercase[Math.floor(Math.random() * lowercase.length)]
+var randomUppercase = uppercase[Math.floor(Math.random() * uppercase.length)]
+var randomNumbers = numbers[Math.floor(Math.random() * numbers.length)]
+var randomSymbols = symbols[Math.floor(Math.random()*symbols.length)]
+
+// Assignment Code with prompts and confirms 
+var generateBtn = document.querySelector("#generate");
+var lengthPrompt= prompt('How many Characters long do you want the password to be?');
+var symbolsConfirm = confirm('Add symbols in your password?');
+var numbersConfirm = confirm('Add numbers in your password?');
+var uppercaseConfirm = confirm('Add uppercase letters in your password?');
+var lowercaseConfirm = confirm('Add lowercase letters in your password?')
+
+
+
+//console logs testing out variables and prompts
+console.log(randomLowercase)
+console.log(randomSymbols)
+console.log(lengthPrompt)
+console.log(randomUppercase)
+console.log(randomNumbers)
+console.log(symbolsConfirm)
+console.log(numbersConfirm)
+console.log(uppercaseConfirm)
+console.log(lowercaseConfirm)
+console.log(userConditions)
+
+if(numbersConfirm){
+  
+
+}
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+  copyBtn.removeAttribute("disabled");
+  copyBtn.focus();
+}
+
+function copyToClipboard() {
+  // BONUS 
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
+// BONUS EVENT LISTENER
