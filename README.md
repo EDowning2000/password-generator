@@ -1,10 +1,10 @@
 # password-generator-hw
 
-
-
-languages
-purpose of app and what it does 
-screenshot
+This application was coded in HTML, CSS, and JavaScript
+-------------------------------------------------------
+The purpose of this application is to give the user a randomly generated password, based on the stipulations that the user inputs via prompts, and confirms. You start the application by pressing the generate password button, select a number between 8-128, and then the confirms and prompt will be shown to the user on the top of the webpage, finally the random password is shown in the textbox for the user. 
+-------------------------------------------------------
+Screenshots of the webpage can be seen below
 
 
 
